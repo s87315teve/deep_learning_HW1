@@ -30,7 +30,7 @@ train-toneless.csv -> train-toneless_origin.csv
 ```
 python audio_transfer.py
 ```
-使用for loop+subprocess在程式中自動使用sox的指令將train_origin與test_origin的裡面所有的音檔自動轉換為16KHz，並輸出為train、test資料夾
+使用for loop+subprocess在程式中自動使用sox的指令將train_origin與test_origin的裡面所有的音檔自動轉換為16KHz，並輸出為train、test資料夾(若環境無sox須先安裝)
 ```python=
 for filename in file_list:
     subprocess.getstatusoutput("sox {}/{} -r 16000 -e signed-integer -b 16 {}/{}".format(origin_folder, filename, new_folder, filename))
