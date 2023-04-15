@@ -117,7 +117,6 @@ speech2text = Speech2Text("exp/asr_train_asr_conformer_raw_zh_char_sp/config.yam
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首先從epoch的數量來看，能夠發現epoch大約在60~80之間，acc就已經收斂得差不多了，因此不需要訓練太多epoch；訓練資料集裡總共有約3000筆資料，在觀察train和valid的acc時，能夠發現train和dev資料的比例約為9:1時的表現較好，若dev的資料再減少的話則會導致train的acc高但valid的acc降低，也就是會造成over fitting的問題；此外在決定branchformer和conformer的選擇以及attention_heads的數量時，發現影響皆不太顯著，而layer數量若增加的話則會大幅增加對記憶體的需求，因此在本作業中並未多做調整。<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在經過考慮後，最後交出的模型是case4的模型，雖然public data的準確度不是最高的，但他的epoch數量以及train:dev的數量皆在合適的範圍，因此選擇這個模型交出。
-
     * case1
 ![](https://i.imgur.com/Vh1sbwe.png)
     * case2
