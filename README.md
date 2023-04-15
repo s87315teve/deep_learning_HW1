@@ -54,9 +54,9 @@ pattern = re.compile("[^A-Za-z\s]")
 (train為訓練資料集，dev為validation的資料)
 
 ```
-train/1~300.wav -> egs2/aishell/asr1/downloads/data_aishell/wav/dev/1~300.wav
-train/301~.wav -> egs2/aishell/asr1/downloads/data_aishell/wav/train/300~.wav
-test/-> egs2/aishell/asr1/downloads/data_aishell/wav/test/
+train/1~300.wav -> egs2/aishell/asr1/downloads/data_aishell/wav/dev/global/1~300.wav
+train/301~.wav -> egs2/aishell/asr1/downloads/data_aishell/wav/train/global/300~.wav
+test/-> egs2/aishell/asr1/downloads/data_aishell/wav/test/global/
 aishell_transcript.txt -> egs2/aishell/asr1/downloads/data_aishell/transcript/aishell_transcript.txt 
 
 ```
